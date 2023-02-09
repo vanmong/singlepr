@@ -1,0 +1,7 @@
+@charset "UTF-8";
+body{
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-family: 'Open Sans', 'Noto Sans KR';
+}
