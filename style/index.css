@@ -1,5 +1,10 @@
 @charset "UTF-8";
-body{
+
+:root {
+  --menuBoxWidth: calc(50vw + 335px);
+}
+
+body {
   font-size: 15px;
   font-size: 1.5rem;
   line-height: 1.5;

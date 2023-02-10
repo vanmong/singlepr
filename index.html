@@ -3,25 +3,224 @@
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>다이아픽</title>
+<!-- minreset -->
+<link rel="stylesheet" href="./common/minireset.min.css">
 <!-- font.css -->
 <link rel="stylesheet" href="./common/fonts/NotoSansKR.css">
-<link rel="stylesheet" href="./common/fonts/OpenSans.css">
+<link rel="stylesheet" href="./common/fonts/OpenSans.css"> 
 <!-- style -->
 <link rel="stylesheet" href="./style/index.css">
+<!-- mobile -->
+<link rel="stylesheet" href="./style/index_mobile.css" media="screen and (max-width:750px)">
+<!-- pc -->
+<link rel="stylesheet" href="./style/index_pc.css">
 <!-- js -->
 <script defer src="./js/index.js"></script>
 </head>
 <body>
-  <nav>
-    <h1 class="logo"><img src="" alt=""></h1>
-    <div id="gnb">
-      <ul>
-        <li><a href="">상품소개</a></li>
-        <li><a href="">캠페인</a></li>
-        <li><a href="">인플루언서</a></li>
-      </ul>
+  <div id="wrap">
+    <header>
+      <h1 class="logo">
+        <a href="#">
+          <img src="./images/logo.png" alt="로고">
+        </a>
+      </h1>
+      <div id="gnb">
+        <ul>
+          <li><a href="#product">상품소개</a></li>
+          <li><a href="#campain">캠페인</a></li>
+          <li><a href="#influencer">인플루언서</a></li>
+        </ul>
+        <!-- mobile -->
+      </div>
+      <div class="hambuger">
+        <div class="hambuger_box">
+          <div class="hambuger_inner"></div>
+        </div>
+      </div>
+    </header>
+    <div id="content">
+      <div class="contents">
+        <div class="main_container">
+          <div class="main_top">
+            <div class="main_title">
+              <div class="txt_box">
+                <p>인플루언서를 만나는 가장 쉬운 방법</p>
+              </div>
+              <div class="txt_box">
+                <p>인플루언서</p>
+              </div>
+              <div class="txt_box">
+                <p>매칭</p>
+              </div>
+              <div class="txt_box">
+                <p>플랫폼</p>
+              </div>
+              <div class="txt_box">
+                <img src="./images/influencer/main_title_logo.png" alt="로고">
+              </div>
+            </div>
+            <div class="main_menus">
+              <div class="main_box on">
+                <dl>
+                  <dt>
+                    <span>광고주</span>
+                    <span class="m_btn">
+                      <button type="button">인플루언서</button>
+                    </span>
+                  </dt>
+                  <dd>
+                    브랜드에 꼭 맞는<br>
+                    인플루언서를 찾고 있나요?
+                  </dd>
+                  <dd>
+                    <a href="">
+                      <em>상품 소개서 다운로드</em>
+                      <span class="ico download2"></span>
+                    </a>
+                  </dd>
+                </dl>
+                <div class="go_btn">
+                  <span class="ico ico-toggle-arrow"></span>
+                </div>
+              </div>
+              <div class="main_box">
+                <!-- 비활성화 -->
+              </div>
+            </div>
+          </div>
+          <div class="main_contents">
+            <div class="conts_box user_mode">
+              <div class="tab_menu">
+                <ul>
+                  <li class="on"><button type="button">광고주</button></li>
+                  <li><button type="button">인플루언서</button></li>
+                </ul>
+              </div>
+              <div class="title_box">
+                <p>
+                  인플루언서 마케팅,
+                  <br>
+                  직거래 진행으로 마케팅 예산을 절감하세요.
+                  <br>
+                  <span>최대&nbsp;</span><em>65%</em><span>&nbsp;절감&nbsp;효과!</span>
+                </p>
+              </div>
+              <div class="send_btn">
+                <span class="ico outer_arrow"></span>
+                <div class="btns">
+                  <a href="#">
+                    <span>캠페인 등록하기</span>
+                  </a>
+                </div>
+              </div>
+              <div class="visual_box">
+                <div class="visual_clip">
+                  <img src="./images/influencer/main_circle_v01.png" alt="">
+                  <dl>
+                    <dt>ADVERTISER</dt> 
+                    <dd>광고주</dd>
+                  </dl>
+                </div>
+                <div class="anim_box arrows">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="visual_clip center">
+                  <img src="./images/influencer/main_circle_v02.png" alt="">
+                  <dl>
+                    <dd>캠페인 등록</dd>
+                  </dl>
+                </div>
+                <div class="anim_box arrows">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="visual_clip influencer">
+                  <img src="./images/influencer/main_circle_v03.png" alt="">
+                  <dl>
+                    <dt>INFLUENCER</dt> 
+                    <dd>인플루언서</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="conts_box dia_score">
+              <div class="title_box">
+                <p>
+                  다이아미터,
+                  <br>
+                  빅데이터기반
+                  <br>
+                  인플루언서 경쟁력 지수
+                </p>
+              </div>
+              <div class="explain_box">
+                <img src="./images/influencer/dia_score.png" alt="다이아스코어">
+                <ul>
+                  <li>
+                    <dt>성장률</dt>
+                    <dd>구독자 수 성장률과 조회수 성장률의 평균</dd>
+                  </li>
+                  <li>
+                    <dt>참여도</dt>
+                    <dd>구독자 수 대비 좋아요 수 + 댓글 수 공유수</dd>
+                  </li>
+                  <li>
+                    <dt>활성도</dt>
+                    <dd>구독자 수 대비 조회수 퍼센트</dd>
+                  </li>
+                  <li>
+                    <dt>광고 효율</dt>
+                    <dd>일반 콘텐츠 대비 광고 콘텐츠 효율</dd>
+                  </li>
+                </ul>
+              </div>
+              <div class="visual_box anim_box">
+                <p>다이아미터</p>
+                <div class="rate">
+                  <em>8</em><em>.</em><em>3</em><span>/10</span>
+                </div>
+                <div class="graph_imgs">
+                  <img src="./images/influencer/graph_source_01.png" alt="소스1" class="btm">
+                  <div class="img_mask anim_box">
+                    <img src="./images/influencer/graph_source_02.png" alt="">
+                  </div>
+                  <div class="line_mask">
+                    <img src="./images/influencer/graph_source_04.png" alt="" class="anim_box">
+                  </div>
+                  <img src="./images/influencer/graph_source_03.png" alt="소스3" class="point anim_box">
+                </div>
+              </div>
+              <div class="visual_box anim_box">
+                <p>다이아미터 현황</p>
+                <div class="graph_imgs">
+                  <img src="./images/influencer/graph_source_05.png" alt="">
+                  <div class="sticks">
+                    <div class="stick anim_box">
+                      <span>5.1</span>
+                    </div>
+                    <div class="stick anim_box">
+                      <span>8.4</span>
+                    </div>
+                    <div class="stick anim_box">
+                      <span>7.2</span>
+                    </div>
+                    <div class="stick anim_box">
+                      <span>5.0</span>
+                    </div>
+                  </div>
+                  <div class="line_mask">
+                    <img src="./images/influencer/graph_source_06.png" alt="" class="anim_box">
+                  </div>
+                  <img src="./images/influencer/graph_source_03.png" alt="" class="point anim_box">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </nav>
+  </div>
 </body>
 </html>
