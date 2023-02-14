@@ -267,4 +267,391 @@
   font-size: 0px;
 }
 /* //유저 모드 */
+/* 다이아 스코어 */
+#wrap #content .contents .main_container .main_contents .dia_score{
+  padding: 18.6vw 0 122vw 8vw;
+}
+/* 다스-타이틀박스 */
+#wrap #content .contents .main_container .main_contents .dia_score .title_box p {
+  font-size: 6.9vw;
+  font-weight: 900;
+  line-height: 10.1vw;
+}
+/* 다스-익스플레인박스 */
+#wrap #content .contents .main_container .main_contents .dia_score .explain_box {
+  margin-top: 16vw;
+}
+#wrap #content .contents .main_container .main_contents .dia_score .explain_box img {
+  width: 35vw;
+  margin-left: -5.5vw;
+}
+#wrap #content .contents .main_container .main_contents .dia_score .explain_box ul li {
+  margin-bottom: 3.7vw;
+}
+#wrap #content .contents .main_container .main_contents .dia_score .explain_box ul li dt {
+  display: inline-block;
+  font-size: 4.2vw;
+  font-weight: 700;
+  vertical-align: middle;
+  padding-left: 6.4vw;
+  letter-spacing: -1px;
+  background-repeat: no-repeat;
+  background-size: 5.4vw 5.4vw;
+  background-position: left center;
+  color: #111;
+}
+#wrap #content .contents .main_container .main_contents .dia_score .explain_box ul li:nth-child(1) dt {
+  background-image: url(../images/ico/dia_score_01.svg);
+}
+#wrap #content .contents .main_container .main_contents .dia_score .explain_box ul li:nth-child(2) dt {
+  background-image: url(../images/ico/dia_score_02.svg);
+}
+#wrap #content .contents .main_container .main_contents .dia_score .explain_box ul li:nth-child(3) dt {
+  background-image: url(../images/ico/dia_score_03.svg);
+}
+#wrap #content .contents .main_container .main_contents .dia_score .explain_box ul li:nth-child(4) dt {
+  background-image: url(../images/ico/dia_score_04.svg);
+}
 
+#wrap #content .contents .main_container .main_contents .dia_score .explain_box ul li dd {
+  display: inline-block;
+  margin-left: 2.13vw;
+  font-size: 3.7vw;
+  font-weight: 500;
+  color: #656565;
+  letter-spacing: -1px;
+  vertical-align: middle;
+}
+/* 다스-비쥬얼박스 */
+#wrap #content .contents .main_container .main_contents .dia_score .animate_box {
+  position: absolute;
+  /* top: 120vw;
+  left: 7vw; */
+}
+#wrap #content .contents .main_container .main_contents .dia_score .animate_box .visual_box:first-child{
+  margin-top: 10vw;
+  z-index: 5;
+}
+#wrap #content .contents .main_container .main_contents .dia_score .animate_box .visual_box {
+  position: relative;
+  box-sizing: content-box;
+  border-radius: 4.2vw;
+  width: 484px;
+  height: 292px;
+  padding: 44px;
+  margin: 0 auto;
+  text-align: left;
+  box-shadow: 0 16px 36px 0 rgb(204 204 213 / 43%);
+}
+#wrap #content .contents .main_container .main_contents .dia_score .animate_box .visual_box p {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+}
+#wrap #content .contents .main_container .main_contents .dia_score .animate_box .visual_box .rate {
+  font-size: 0;
+}
+#wrap #content .contents .main_container .main_contents .dia_score .animate_box .visual_box .rate em {
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+}
+#wrap #content .contents .main_container .main_contents .dia_score .animate_box .visual_box .rate span {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ddd;
+}
+#wrap #content .contents .main_container .main_contents .dia_score .animate_box .visual_box .graph_imgs {
+  position: absolute;
+  bottom: 44px;
+  left: 44px;
+  width: 484px;
+  height: 170px;
+}
+#wrap #content .contents .main_container .main_contents .dia_score .animate_box .visual_box .graph_imgs img {
+  position: absolute;
+  bottom: 0;
+}
+#wrap #content .contents .main_container .main_contents .dia_score .animate_box .visual_box .graph_imgs .img_mask {
+  width: 444px;
+  height: 132px;
+  position: absolute;
+  left: 25px;
+  overflow: hidden;
+}
+#wrap #content .contents .main_container .main_contents .dia_score .animate_box .visual_box:first-child .graph_imgs .line_mask {
+  position: absolute;
+  left: 372px;
+  top: 5px;
+  width: 3px;
+  height: 126px;
+  overflow: hidden;
+}
+#wrap #content .contents .main_container .main_contents .dia_score .animate_box .visual_box:first-child .graph_imgs .point {
+  left: 345px;
+  top: 68px;
+}
+/* 다스-비박-두번째박스 */
+#wrap #content .contents .main_container .main_contents .dia_score .animate_box .visual_box:last-child {
+  margin-left: 7vw;
+}
+#wrap #content .contents .main_container .main_contents .dia_score .animate_box .visual_box .graph_imgs .sticks {
+  position: absolute;
+  width: 100%;
+  height: 180px;
+  bottom: 32px;
+  overflow: hidden;
+}
+#wrap #content .contents .main_container .main_contents .dia_score .animate_box .visual_box .graph_imgs .sticks .stick {
+  display: inline-block;
+  width: 70px;
+  height: 180px;
+  margin: 0 10px;
+  background: #5c6fc2;
+  text-align: center;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+#wrap #content .contents .main_container .main_contents .dia_score .animate_box .visual_box .graph_imgs .sticks .stick span {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 12px;
+}
+#wrap #content .contents .main_container .main_contents .dia_score .animate_box .visual_box .graph_imgs .sticks .stick:nth-child(1) {
+  margin-left: 68px;
+}
+#wrap #content .contents .main_container .main_contents .dia_score .animate_box .visual_box:last-child .graph_imgs .line_mask {
+  position: absolute;
+  top: 57px;
+  width: 475px;
+  height: 3px;
+  overflow: hidden;
+}
+#wrap #content .contents .main_container .main_contents .dia_score .animate_box .visual_box:last-child .graph_imgs .point {
+  top: 33px;
+  right: -28px;
+}
+/* //다이아스코어 */
+/* 다이아 데이터 */
+#wrap #content .contents .main_container .main_contents .dia_data {
+  padding: 18.6vw 0;
+  padding-bottom: 100vw;
+  padding-left: 8vw;
+  width: 86.8vw;
+} 
+/* 타이틀 */
+#wrap #content .contents .main_container .main_contents .dia_data .title_box {
+  position: relative;
+}
+#wrap #content .contents .main_container .main_contents .dia_data .title_box p {
+  font-size: 6.9vw;
+  line-height: 10.1vw;
+  font-weight: 900;
+}
+/* 버튼 */
+#wrap #content .contents .main_container .main_contents .dia_data .round_btn {
+  margin-top: 8.5vw ;
+  display: inline-block;
+}
+#wrap #content .contents .main_container .main_contents .dia_data .round_btn a {
+  display: block;
+  padding: 4.5vw 6vw;
+  border-radius: 8vw;
+  font-size: 3.7vw;
+  font-weight: 700;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+}
+#wrap #content .contents .main_container .main_contents .dia_data .round_btn a .ico {
+  margin-left: 3.7vw;
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../images/ico/ico_arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 15px;
+  height: 14px;
+}
+/* 애니박스 */
+#wrap #content .contents .main_container .main_contents .dia_data .animate_box {
+  position: relative;
+  margin-top: 16vw;
+  margin-left: -7vw;
+}
+#wrap #content .contents .main_container .main_contents .dia_data .animate_box .visual_box {
+  position: absolute;
+  box-shadow: 0 16px 36px 0 rgb(204 204 213 / 43%) ;
+  width: 572px;
+  height: 340px;
+  padding: 60px;
+  box-sizing: content-box;
+  text-align: left;
+  font-size: 0;
+  margin: 0 auto;
+  border-radius: 4.2vw;
+  background: #fff;
+}
+#wrap #content .contents .main_container .main_contents .dia_data .animate_box .visual_box dt {
+  font-size: 29px;
+  font-weight: 900;
+  color: #111;
+}
+#wrap #content .contents .main_container .main_contents .dia_data .animate_box .visual_box dd {
+  display: inline-block;
+  width: 100%;
+  font-size: 0;
+  font-weight: 900;
+  color: #111;
+  text-align: right;
+  margin-top: 50px;
+}
+#wrap #content .contents .main_container .main_contents .dia_data .animate_box .visual_box dd em {
+  font-size: 130px;
+  font-weight: 700;
+  font-style: normal;
+
+}
+#wrap #content .contents .main_container .main_contents .dia_data .animate_box .visual_box dd span {
+  font-size: 120px;
+}
+/* 애니박스-마지막박스 */
+#wrap #content .contents .main_container .main_contents .dia_data .animate_box .visual_box:last-child dd {
+  width: 50%;
+  text-align: left;
+  margin-top: 80px;
+}
+#wrap #content .contents .main_container .main_contents .dia_data .animate_box .visual_box:last-child dd span {
+  font-size: 46px;
+}
+#wrap #content .contents .main_container .main_contents .dia_data .animate_box .visual_box:last-child dd em {
+  font-size: 54px;
+}
+#wrap #content .contents .main_container .main_contents .dia_data .animate_box .visual_box:last-child dd:last-child em {
+  font-size: 180px;
+  letter-spacing: -14px;
+  color: #ff5f00;
+} 
+#wrap #content .contents .main_container .main_contents .dia_data .animate_box .visual_box:last-child dd:last-child span {
+  font-size: 36px;
+  color: #ddd;
+  text-align: right;  
+}
+/* //다이아데이터 */
+/* 인플루언서 인트로 */
+#wrap #content .contents .main_container .main_contents .influencer_intro{
+  padding: 18.6vw 0 ;
+  padding-bottom: 90vw;
+  padding-left: 8vw;
+  width: 86.8vw;
+}
+#wrap #content .contents .main_container .main_contents .influencer_intro .title_box {
+  position: relative;
+}
+#wrap #content .contents .main_container .main_contents .influencer_intro .title_box p {
+  font-size: 6.8vw ;
+  line-height: 10.1vw;
+  font-weight: 900; 
+}
+#wrap #content .contents .main_container .main_contents .influencer_intro .round_btn {
+  margin-top: 8.5vw;
+  display: inline-block;
+}
+#wrap #content .contents .main_container .main_contents .influencer_intro .round_btn a {
+  padding: 4.5vw 6vw;
+  border-radius: 8vw;
+  font-size: 3.7vw;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  background: #111;
+  font-weight: 700;
+}
+#wrap #content .contents .main_container .main_contents .influencer_intro .round_btn a span {
+  display: inline-block;
+  vertical-align: middle;
+}
+#wrap #content .contents .main_container .main_contents .influencer_intro .round_btn a .ico {
+  margin-left: 3.7vw;
+  background: url(../images/ico/ico_arrow.svg);
+  width: 15px;
+  height: 14px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+/* 인인-애니메이트 박스 */
+#wrap #content .contents .main_container .main_contents .influencer_intro .animate_box {
+  top: 0;
+  margin-top: 16vw;
+  position: relative;
+}
+/* 카테고리 탭 */
+#wrap #content .contents .main_container .main_contents .influencer_intro .animate_box .cate_tabs ul {
+  font-size: 0;
+  white-space: nowrap;
+}
+#wrap #content .contents .main_container .main_contents .influencer_intro .animate_box .cate_tabs ul li{
+  display: inline-block;
+  margin-right: 12px;
+}
+#wrap #content .contents .main_container .main_contents .influencer_intro .animate_box .cate_tabs ul li button {
+  display: block;
+  height: 68px;
+  padding: 0 26px;
+  border-radius: 68px;
+  background: #fafafc;
+  border: none;
+  font-family: 'Open Sans','Noto Sans KR', sans-serif;
+  cursor: pointer;
+}
+#wrap #content .contents .main_container .main_contents .influencer_intro .animate_box .cate_tabs ul li.on button {
+  background: #5c6fc2;
+}
+#wrap #content .contents .main_container .main_contents .influencer_intro .animate_box .cate_tabs ul li button span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 22px;
+  font-weight: 500;
+  color: #999;
+}
+#wrap #content .contents .main_container .main_contents .influencer_intro .animate_box .cate_tabs ul li.on button span {
+  color: #fff;
+}
+#wrap #content .contents .main_container .main_contents .influencer_intro .animate_box .cate_tabs ul li button span:first-child {
+  margin-right: 10px;
+  font-size: 0;
+}
+/* 카테고리 리스트 */
+#wrap #content .contents .main_container .main_contents .influencer_intro .animate_box .cate_list {
+  position: absolute;
+  top: 115px;
+}
+#wrap #content .contents .main_container .main_contents .influencer_intro .animate_box .cate_list ul li {
+  box-sizing: content-box;
+  position: relative;
+  display: block;
+  width: 422px;
+  height: 98px;
+  padding: 38px 32px;
+  border-radius: 32px;
+  margin-bottom: 16px;
+  background: #fff;
+  box-shadow: 0 6px 21px 0 rgb(224 224 231 / 70%);
+}
+#wrap #content .contents .main_container .main_contents .influencer_intro .animate_box .cate_list ul li div {
+  display: inline-block;
+  vertical-align: middle;
+}
+#wrap #content .contents .main_container .main_contents .influencer_intro .animate_box .cate_list ul li .chker input[type=checkbox]{
+  display: none;
+}
+#wrap #content .contents .main_container .main_contents .influencer_intro .animate_box .cate_list ul li .chker label {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background: #eee;
+  cursor: pointer;
+}
