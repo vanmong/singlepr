@@ -3,7 +3,9 @@
 :root {
   --menuBoxWidth: calc(50vw + 335px);
 }
-
+body {
+  letter-spacing: -0.5px;
+}
 body, button {
   font-size: 15px;
   font-size: 1.5rem;
