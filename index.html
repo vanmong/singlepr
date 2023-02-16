@@ -15,8 +15,10 @@
   <link rel="stylesheet" href="./style/index.css">
   <!-- mobile -->
   <link rel="stylesheet" href="./style/index_mobile.css" media="screen and (max-width:750px)">
+  <!-- tablet -->
+  <link rel="stylesheet" href="./style/index_tablet.css" media="screen and (max-width:1200px)">
   <!-- pc -->
-  <link rel="stylesheet" href="./style/index_pc.css">
+  <link rel="stylesheet" href="./style/index_pc.css" media="screen and (min-width:1201px)">
   <!-- js -->
   <script defer src="./js/index.js"></script>
 </head>
@@ -35,7 +37,6 @@
           <li><a href="#campain">캠페인</a></li>
           <li><a href="#influencer">인플루언서</a></li>
         </ul>
-        <!-- mobile -->
       </div>
       <div class="hambuger">
         <div class="hambuger_box">
@@ -52,10 +53,10 @@
                 <p>인플루언서를 만나는 가장 쉬운 방법</p>
               </div>
               <div class="txt_box">
-                <p>인플루언서</p>
+                <p>인플루언서&nbsp;</p>
               </div>
               <div class="txt_box">
-                <p>매칭</p>
+                <p>매칭&nbsp;</p>
               </div>
               <div class="txt_box">
                 <p>플랫폼</p>
@@ -65,7 +66,7 @@
               </div>
             </div>
             <div class="main_menus">
-              <div class="main_box on">
+              <div class="main_box on"><!-- 활성화 -->
                 <dl>
                   <dt>
                     <span>광고주</span>
@@ -85,11 +86,35 @@
                   </dd>
                 </dl>
                 <div class="go_btn">
-                  <span class="ico ico-toggle-arrow"></span>
+                  <button type="button">
+                    <span class="ico ico-toggle-arrow"></span>
+                  </button>
                 </div>
               </div>
               <div class="main_box">
-                <!-- 비활성화 -->
+                <dl>
+                  <dt>
+                    <span>광고주</span>
+                    <span class="m_btn">
+                      <button type="button">인플루언서</button>
+                    </span>
+                  </dt>
+                  <dd>
+                    브랜드에 꼭 맞는<br>
+                    인플루언서를 찾고 있나요?
+                  </dd>
+                  <dd>
+                    <a href="">
+                      <em>상품 소개서 다운로드</em>
+                      <span class="ico download2"></span>
+                    </a>
+                  </dd>
+                </dl>
+                <div class="go_btn">
+                  <button type="button">
+                    <span class="ico ico-toggle-arrow"></span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
