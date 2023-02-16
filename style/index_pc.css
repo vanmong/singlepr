@@ -8,14 +8,14 @@
   position: fixed;
   display: flex;
   width: 100%;
-  height: 50px;
+  height: 100px;
   border-bottom: #d4d4d4 solid 1px;
 }
 
 #wrap header .logo {
   position: absolute;
-  top: 5px;
-  left: 20px;
+  top: 30px;
+  left: 30px;
 }
 
 #wrap header .logo a {
@@ -25,11 +25,23 @@
 #wrap header .logo a img {
   vertical-align: middle;
 }
-
-#wrap header #gnb ul {
-  display: none;
+#wrap header #gnb {
+  display: flex;
+  align-items: center;
+  padding-left: 185px;
 }
-
+#wrap header #gnb ul {
+  display: flex;
+}
+#wrap header #gnb ul li {
+  min-width: 60px;
+  margin-right: 35px;
+}
+#wrap header #gnb ul li a {
+  font-size: 16px;
+  color: #222;
+  text-decoration: none;
+}
 /* 네비 햄버거 */
 #wrap header .hambuger {
   position:
@@ -417,14 +429,14 @@
 }
 
 #wrap #content .contents .main_container .main_contents .user_mode .visual_box .visual_clip dl dt {
-  font-size: 3.7vw;
+  font-size: 24px ;
   font-weight: 700;
   color: #111;
 }
 
 #wrap #content .contents .main_container .main_contents .user_mode .visual_box .visual_clip dl dd {
-  font-size: 6.4vw;
-  font-weight: 900;
+  font-size: 40px;
+  font-weight: 700;
   color: #111;
 }
 
@@ -435,14 +447,15 @@
 
 /* 화살표들 */
 #wrap #content .contents .main_container .main_contents .user_mode .visual_box .anim_box {
-  margin: 6.5vw 0;
-  transform-origin: 50% 50%;
-  transform: rotate(90deg);
+  font-size: 0;
+  margin: 0 30px;
+  margin-top: 100px;
+  vertical-align: top;
 }
 
 #wrap #content .contents .main_container .main_contents .user_mode .visual_box .anim_box span {
-  width: 2.5333vw;
-  height: 4.8vw;
+  width: 19px;
+  height: 36px;
   display: inline-block;
   background-image: url(../images/ico/ico_right_arrow.svg);
   background-repeat: no-repeat;
@@ -453,39 +466,44 @@
 /* //유저 모드 */
 /* 다이아 스코어 */
 #wrap #content .contents .main_container .main_contents .dia_score {
-  padding: 18.6vw 0 122vw 8vw;
+  position: relative;
+  width: 100%;
+  padding-top: 180px;
+  padding-bottom: 274px;
 }
 
 /* 다스-타이틀박스 */
+#wrap #content .contents .main_container .main_contents .dia_score .title_box {
+  position: relative;
+}
 #wrap #content .contents .main_container .main_contents .dia_score .title_box p {
-  font-size: 6.9vw;
-  font-weight: 900;
-  line-height: 10.1vw;
+  font-size: 46px;
+  line-height: 68px;
+  font-weight: 900; 
 }
 
 /* 다스-익스플레인박스 */
 #wrap #content .contents .main_container .main_contents .dia_score .explain_box {
-  margin-top: 16vw;
+  margin-top: 100px;
 }
 
 #wrap #content .contents .main_container .main_contents .dia_score .explain_box img {
-  width: 35vw;
-  margin-left: -5.5vw;
+  margin-left: -35px;
 }
 
 #wrap #content .contents .main_container .main_contents .dia_score .explain_box ul li {
-  margin-bottom: 3.7vw;
+  margin-bottom: 22px;
 }
 
 #wrap #content .contents .main_container .main_contents .dia_score .explain_box ul li dt {
   display: inline-block;
-  font-size: 4.2vw;
+  font-size: 24px;
   font-weight: 700;
   vertical-align: middle;
-  padding-left: 6.4vw;
+  padding-left: 33px ;
   letter-spacing: -1px;
   background-repeat: no-repeat;
-  background-size: 5.4vw 5.4vw;
+  background-size: 28px 28px;
   background-position: left center;
   color: #111;
 }
@@ -508,10 +526,10 @@
 
 #wrap #content .contents .main_container .main_contents .dia_score .explain_box ul li dd {
   display: inline-block;
-  margin-left: 2.13vw;
-  font-size: 3.7vw;
+  margin-left: 24px;
+  font-size: 20px;
   font-weight: 500;
-  color: #656565;
+  color: #111;
   letter-spacing: -1px;
   vertical-align: middle;
 }
@@ -519,23 +537,25 @@
 /* 다스-비쥬얼박스 */
 #wrap #content .contents .main_container .main_contents .dia_score .animate_box {
   position: absolute;
-  /* top: 120vw;
-  left: 7vw; */
+  left: 50%;
+  top: 0;
 }
 
 #wrap #content .contents .main_container .main_contents .dia_score .animate_box .visual_box:first-child {
-  margin-top: 10vw;
+  margin-top: 252px;
   z-index: 5;
 }
-
+#wrap #content .contents .main_container .main_contents .dia_score .animate_box .visual_box:last-child {
+  margin-top: 42px;
+  margin-left: 80px;
+}
 #wrap #content .contents .main_container .main_contents .dia_score .animate_box .visual_box {
   position: relative;
   box-sizing: content-box;
-  border-radius: 4.2vw;
+  border-radius: 26px;
   width: 484px;
   height: 292px;
   padding: 44px;
-  margin: 0 auto;
   text-align: left;
   box-shadow: 0 16px 36px 0 rgb(204 204 213 / 43%);
 }
@@ -649,10 +669,10 @@
 /* //다이아스코어 */
 /* 다이아 데이터 */
 #wrap #content .contents .main_container .main_contents .dia_data {
-  padding: 18.6vw 0;
-  padding-bottom: 100vw;
-  padding-left: 8vw;
-  width: 86.8vw;
+  position: relative;
+  padding: 180px 0;
+  padding-bottom: 337px;
+  width: 100%;
 }
 
 /* 타이틀 */
@@ -661,22 +681,23 @@
 }
 
 #wrap #content .contents .main_container .main_contents .dia_data .title_box p {
-  font-size: 6.9vw;
-  line-height: 10.1vw;
+  font-size: 46px;
+  line-height: 68px;
   font-weight: 900;
+  color: #111;
 }
 
 /* 버튼 */
 #wrap #content .contents .main_container .main_contents .dia_data .round_btn {
-  margin-top: 8.5vw;
+  margin-top:60px;
   display: inline-block;
 }
 
 #wrap #content .contents .main_container .main_contents .dia_data .round_btn a {
   display: block;
-  padding: 4.5vw 6vw;
+  padding: 32px 48px;
   border-radius: 8vw;
-  font-size: 3.7vw;
+  font-size: 20px;
   font-weight: 700;
   background: #111;
   color: #fff;
@@ -696,9 +717,9 @@
 
 /* 애니박스 */
 #wrap #content .contents .main_container .main_contents .dia_data .animate_box {
-  position: relative;
-  margin-top: 16vw;
-  margin-left: -7vw;
+  position: absolute;
+   top: 180px;
+   left: 50%;
 }
 
 #wrap #content .contents .main_container .main_contents .dia_data .animate_box .visual_box {
@@ -711,7 +732,7 @@
   text-align: left;
   font-size: 0;
   margin: 0 auto;
-  border-radius: 4.2vw;
+  border-radius: 26px;
   background: #fff;
 }
 
@@ -772,10 +793,10 @@
 /* //다이아데이터 */
 /* 인플루언서 인트로 */
 #wrap #content .contents .main_container .main_contents .influencer_intro {
-  padding: 18.6vw 0;
-  padding-bottom: 90vw;
-  padding-left: 8vw;
-  width: 86.8vw;
+  position: relative;
+  padding: 180px 0;
+  padding-bottom: 387px;
+  width:100%;
 }
 
 #wrap #content .contents .main_container .main_contents .influencer_intro .title_box {
@@ -783,20 +804,21 @@
 }
 
 #wrap #content .contents .main_container .main_contents .influencer_intro .title_box p {
-  font-size: 6.8vw;
-  line-height: 10.1vw;
+  font-size: 46px;
+  line-height: 68px;
   font-weight: 900;
+  color: #111;
 }
 
 #wrap #content .contents .main_container .main_contents .influencer_intro .round_btn {
-  margin-top: 8.5vw;
+  margin-top:60px;
   display: inline-block;
 }
 
 #wrap #content .contents .main_container .main_contents .influencer_intro .round_btn a {
-  padding: 4.5vw 6vw;
-  border-radius: 8vw;
-  font-size: 3.7vw;
+  padding: 32px 48px;
+  border-radius: 64px;
+  font-size: 20px;
   display: block;
   color: #fff;
   text-decoration: none;
@@ -810,7 +832,7 @@
 }
 
 #wrap #content .contents .main_container .main_contents .influencer_intro .round_btn a .ico {
-  margin-left: 3.7vw;
+  margin-left: 68px;
   background: url(../images/ico/ico_arrow.svg);
   width: 15px;
   height: 14px;
@@ -820,9 +842,9 @@
 
 /* 인인-애니메이트 박스 */
 #wrap #content .contents .main_container .main_contents .influencer_intro .animate_box {
-  top: 0;
-  margin-top: 16vw;
-  position: relative;
+  position: absolute;
+  top: 175px;
+  left: 50%;
 }
 
 /* 카테고리 탭 */
@@ -879,7 +901,6 @@
   position: relative;
   display: block;
   width: 422px;
-  /* 422 */
   height: 98px;
   padding: 38px 32px;
   border-radius: 32px;
@@ -932,7 +953,7 @@
 }
 
 /* 인포 */
-#wrap #content .contents .main_container .main_contents .influencer_intro .animate_box .cate_list ul li .info a {
+#wrap #content .contents .main_container .main_contents .influencer_intro .animate_box .cate_list ul li .info a { 
   display: inline-block;
   color: inherit;
   text-decoration: none;
@@ -948,7 +969,7 @@
 #wrap #content .contents .main_container .main_contents .influencer_intro .animate_box .cate_list ul li .info a .channel_name {
   margin: 0;
   margin-bottom: 8px;
-  font-size: 5.3vw;
+  font-size: 20px;
   font-weight: 700;
   width: 240px;
   letter-spacing: -1px;
@@ -1001,7 +1022,8 @@
 /* //인플루언서 인트로 */
 /* 리코맨드 박스 */
 #wrap #content .contents .main_container .main_contents .recommend_box {
-  padding: 18.6vw 0 18.6vw 8vw;
+  padding:180px 0 ;
+  width: 100%;
   position: relative;
 }
 
@@ -1018,31 +1040,31 @@
 }
 
 #wrap #content .contents .main_container .main_contents .recommend_box .title_box {
-  text-align: left;
+  text-align: center;
   position: relative;
 }
 
 #wrap #content .contents .main_container .main_contents .recommend_box .title_box p {
-  font-size: 6.9vw;
-  line-height: 10.1vw;
+  font-size: 46px;
+  line-height: 68px;
   font-weight: 900;
   word-break: keep-all;
 }
 
 #wrap #content .contents .main_container .main_contents .recommend_box .btn_group {
-  text-align: left;
-  margin-bottom: 16vw;
+  text-align: center;
+  margin-bottom: 150px;
 }
 
 #wrap #content .contents .main_container .main_contents .recommend_box .btn_group .round_btn {
-  margin: 8.5vw 0.5vw 0 0;
+  margin: 60px 12px 0;
   display: inline-block;
 }
 
 #wrap #content .contents .main_container .main_contents .recommend_box .btn_group .round_btn a {
-  padding: 4.5vw 6vw;
-  border-radius: 8vw;
-  font-size: 3.7vw;
+  padding: 32px 48px;
+  border-radius: 64px;
+  font-size: 20px;
   display: block;
   background: #111;
   color: #fff;
@@ -1073,22 +1095,23 @@
 }
 
 #wrap #content .contents .main_container .main_contents .recommend_box .recommend_list ul li {
-  width: 84vw;
-  margin: 0 2.1vw;
+  width: 520px;
+  margin: 0 30px;
   position: absolute;
   display: inline-block;
 }
 
 #wrap #content .contents .main_container .main_contents .recommend_box .recommend_list ul li button {
   border: 0 none;
+  height: 304px;
   background: transparent;
   text-align: left;
 }
 
 #wrap #content .contents .main_container .main_contents .recommend_box .recommend_list ul li button .main_video {
-  width: 84vw;
-  height: 50.4vw;
-  border-radius: 4.2vw;
+  width: 520px;
+  height: 304px;
+  border-radius: 32px;
   overflow: hidden;
 }
 
@@ -1098,7 +1121,7 @@
 
 #wrap #content .contents .main_container .main_contents .recommend_box .recommend_list ul li button .main_video .play_cover {
   position: absolute;
-  background-size: 19vw 19vw;
+  background-size:86px 65px;
   width: 100%;
   height: 100%;
   left: 0;
@@ -1110,8 +1133,8 @@
 }
 
 #wrap #content .contents .main_container .main_contents .recommend_box .recommend_list ul li button dt {
-  font-size: 3.7vw;
-  margin: 4.8vw 0 0 3.2vw;
+  font-size: 18px;
+  margin: 30px 0 0 12px;
   font-weight: 700;
 }
 
@@ -1122,8 +1145,8 @@
 #wrap #content .contents .main_container .main_contents .recommend_box .recommend_list ul li button dd {
   letter-spacing: -0.5px;
   position: relative;
-  font-size: 4.2vw;
-  margin: 2.13vw 0 0 2.13vw;
+  font-size: 24px;
+  margin: 12px 0 0 12px;
   width: calc(100% - 24px);
   white-space: normal;
   font-weight: 700;
@@ -1136,24 +1159,22 @@ footer {
 }
 
 footer .footer_wrap {
-  width: auto;
-  padding: 15px 0 10px;
+  width: 1200px;
+  padding: 40px 0;
   text-align: left;
-  -webkit-box-sizing: border-box;
   margin: 0 auto;
 }
 
 footer .footer_wrap .policy {
   font-size: 0;
-  padding-bottom: 5px;
-  padding-left: 20px;
+  padding-bottom: 25px;
 }
 
 footer .footer_wrap .policy li {
   position: relative;
   display: inline-block;
   line-height: 14px;
-  padding: 0 3px 0 7px;
+  padding: 0 7px 0 11px;
   border-left: 0 none;
 }
 
@@ -1162,8 +1183,7 @@ footer .footer_wrap .policy li:first-child {
 }
 
 footer .footer_wrap .policy li a {
-  font-size: 12px;
-  line-height: 12px;
+  font-size: 14px;
   text-decoration: none;
   color: #222;
 }
@@ -1173,7 +1193,7 @@ footer .footer_wrap .policy li::after {
   display: block;
   position: absolute;
   width: 1px;
-  height: 10px;
+  height: 17px;
   background-color: #222;
   left: 3px;
   top: 0;
@@ -1184,21 +1204,15 @@ footer .footer_wrap .policy li:first-child::after {
 }
 
 footer .footer_wrap .info {
-  padding: 0 20px;
   text-align: left;
   font-size: 0;
 }
-
-footer .footer_wrap .info ul:last-child {
-  padding-top: 5px;
-}
-
 footer .footer_wrap .info ul li {
-  font-size: 11px;
-  line-height: 18px;
-  padding-right: 15px;
-  color: #666;
   display: inline-block;
+  padding-right: 15px;
+  line-height: 21px;
+  font-size: 12px;
+  color: #666;
 }
 
 footer .footer_wrap .info ul li a {
@@ -1207,10 +1221,9 @@ footer .footer_wrap .info ul li a {
 }
 
 footer .footer_wrap span {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 5px;
-  font-size: 12px;
+  display: block ;
+  padding-top: 20px;
+  font-size: 14px;
   line-height: 28px;
   color: #666;
 }
