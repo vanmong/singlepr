@@ -10,6 +10,7 @@
   width: 100%;
   height: 100px;
   border-bottom: #d4d4d4 solid 1px;
+  transition: all .3s ease-in-out;
 }
 
 #wrap header .logo {
@@ -39,11 +40,17 @@
 }
 #wrap header #gnb ul li a {
   font-size: 16px;
+  font-weight: 500;
   color: #222;
   text-decoration: none;
+  transition: .2s ease-in-out;
+}
+#wrap header #gnb ul li:hover a {
+  color: #ff4900;
 }
 /* 네비 햄버거 */
 #wrap header .hambuger {
+  display: none;
   position:
     /*absolute*/
     fixed;
@@ -87,7 +94,67 @@
   height: 2px;
   background-color: #222;
 }
-
+/* 네비 글로벌 메뉴 */
+#wrap header .global_menu {
+  display: inline-flex;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  margin-right: 30px;
+  align-items: center;
+}
+#wrap header .global_menu .message_icon {
+  margin-right: 25px;
+  display: inline-block;
+  font-size: 0;
+}
+#wrap header .global_menu .message_icon a {
+  display: inline-block;
+  line-height: 20px;
+  position: relative;
+  width: 26px;
+  height: 20px;
+  background: url(../images/ico/message.png);
+}
+#wrap header .global_menu .login {
+  min-width: 18px;
+  height: 20px;
+  padding-left: 25px;
+  background: url(../images/ico/logout.png);
+  font-size: 14px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  color: #999;
+  margin-right: 25px;
+}
+#wrap header .global_menu .question {
+  margin-right: 25px;
+  font-size: 0;
+}
+#wrap header .global_menu .question a {
+  position: relative;
+  font-size: 14px;
+  text-decoration: none;
+  color: inherit;
+  padding-left: 25px;
+}
+#wrap header .global_menu .question a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: url(../images/ico/question_circle.png);
+}
+#wrap header .global_menu .language {
+  font-size: 16px;
+  line-height: 38px;
+}
+#wrap header .global_menu .language a {
+  text-decoration: none;
+  color: #999;
+}
 /* 컨텐츠 */
 #wrap #content {
   position: relative;
@@ -246,7 +313,9 @@
 #wrap #content .contents .main_container .main_top .main_menus .main_box.on dl dd {
   opacity: 1;
 }
-
+#wrap #content .contents .main_container .main_top .main_menus .main_box.on dl dd a {
+  opacity: 1;
+}
 #wrap #content .contents .main_container .main_top .main_menus .main_box dl dd a em {
   display: inline-block;
   color: #111;
@@ -1226,4 +1295,78 @@ footer .footer_wrap span {
   font-size: 14px;
   line-height: 28px;
   color: #666;
+}
+/* 네비게이션 */
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  position: fixed;
+  right: 30px;
+  bottom: 5%;
+  margin-top: -100px;
+  z-index: 10;
+}
+.navigation a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  line-height: 1;
+  text-align: center;
+  -webkit-border-radius: 50px ;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-box-sizing: border-box;
+  margin: 5px 0;
+}
+.navigation .btn_inquiry {
+  position: relative;
+  color: #fff;
+  background: #ff4900;
+  transition: width .35s ease-in;
+}
+.navigation .btn_inquiry span {
+  position: absolute;
+  width: 100%;
+  font-size: 13px;
+  white-space: nowrap;
+  transition: .35s ease-in;
+  visibility: hidden;
+  opacity: 0;
+}
+.navigation .btn_inquiry::before {
+  content: "1:1\A문의";
+  white-space: pre;
+  width: 30px;
+  line-height: 16px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all .35s ease-in;
+  font-size: 12px;
+  opacity: 1  ;
+}
+.navigation .btn_inquiry:hover {
+  width: 160px;
+}
+.navigation .btn_inquiry:hover span {
+  visibility: inherit;
+  opacity: 1;
+} 
+.navigation .btn_inquiry:hover::before {
+  visibility: hidden;
+  opacity: 0;
+}
+.navigation .btn_black {
+  background: #222;
+  color: #fff;
+}
+.navigation .btn_top {
+  background: #222 url(../images/ico/top.png) 50% 50% no-repeat;
+  overflow: hidden;
+  text-indent: -9999px;
 }
